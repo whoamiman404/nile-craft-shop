@@ -1,0 +1,26 @@
+:root{--f:'Tajawal';--bg:#FFFFFF;--ink:#1B1F3B;--acc:#2F4BDB;--acct:#FFFFFF;--hd:#1B1F3B;--hdt:#FFFFFF;--soft:#EEF1FF;--pc:#2F4BDB;}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:var(--f),system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:17px}
+html[lang=en] .ar,html[lang=ar] .en{display:none}
+a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+header{background:var(--hd);color:var(--hdt);position:sticky;top:0;z-index:5}
+.bar{max-width:1080px;margin:auto;padding:.7rem 1.2rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem 1.2rem}
+.logo{font-weight:800;font-size:1.3rem;text-decoration:none;margin-inline-end:auto}
+nav{display:flex;flex-wrap:wrap;gap:.2rem 1rem}nav a{text-decoration:none;padding:.2rem 0;border-bottom:2px solid transparent}
+nav a:hover,nav a[aria-current]{border-color:var(--acc)}
+#lang{background:var(--acc);color:var(--acct);border:0;border-radius:6px;padding:.3rem .8rem;font:inherit;font-weight:700;cursor:pointer}
+main{max-width:1080px;margin:auto;padding:2.5rem 1.2rem 4rem}
+h1{font-size:clamp(2.2rem,7vw,4.2rem);line-height:1.15;font-weight:800;margin-bottom:1rem}
+h2{font-size:1.7rem;margin:2.2rem 0 1rem}p{max-width:62ch;margin-bottom:1rem}
+.hero{padding:3rem 0}.btn{display:inline-block;background:var(--acc);color:var(--acct);padding:.7rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:700}
+.cafe .hero{background:var(--hd);color:var(--hdt);margin:-2.5rem calc(50% - 50vw) 2rem;padding:4rem calc(50vw - 50%)}
+.shop .hero{display:grid;grid-template-columns:1.3fr 1fr;gap:2rem;align-items:center}
+.blk{aspect-ratio:1;background:var(--acc);border-radius:50% 12% 50% 12%;display:grid;place-items:center;font-size:5rem;color:var(--acct)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.2rem}
+.card{background:var(--soft);padding:1.2rem;border-radius:10px;border-inline-start:5px solid var(--acc)}
+.card b{display:block;font-size:1.1rem}.price{font-weight:800;color:var(--pc)}
+form{display:grid;gap:1rem;max-width:520px}label{font-weight:700;display:grid;gap:.3rem}
+input,textarea{font:inherit;padding:.6rem;border:2px solid #aab;border-radius:6px;width:100%}
+footer{background:var(--hd);color:var(--hdt);text-align:center;padding:1.5rem;font-size:.95rem}
+@media(max-width:720px){.shop .hero{grid-template-columns:1fr}.blk{max-width:200px}}
+@media(prefers-reduced-motion:no-preference){.btn{transition:transform .15s}.btn:hover{transform:translateY(-2px)}}
